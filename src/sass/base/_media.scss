@@ -1,0 +1,139 @@
+@media (max-width: 1200px) {
+    .promo {
+        padding: 21px 0 79px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .button {
+        &_main {
+            margin-top: 58px;
+        }
+    }
+
+    .promo {
+        &__subheader {
+            margin-top: 10px;
+        }
+
+        &__icons {
+            margin-top: 56px;
+        }
+
+        &__link {
+            margin-top: 15px;
+        }
+    }
+
+    .advantage {
+        padding: 60px 0 72px 0;
+
+        &__wrapper {
+            margin-top: 57px;
+        }
+    }
+
+    .consultation {
+        padding: 95px 0 87px 0;
+        min-height: 660px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .header {
+        &__official {
+            display: none;
+        }
+    }
+
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .button {
+        width: 117px;
+        height: 19px;
+        font-size: 10px;
+
+        &_main {
+            width: 300px;
+            height: 50px;
+            font-size: 15px;
+        }
+    }
+
+    .header {
+        &__logo {
+            width: 148px;
+        }
+
+        &__phone {
+            font-size: 12px;
+        }
+    }
+
+    .promo {
+        min-height: 560px;
+
+        &__wrapper {
+            margin-top: 62px;
+        }
+
+        &__header {
+            font-size: 24px;
+            line-height: 24px;
+        }
+
+        &__subheader {
+            font-size: 13px;
+            line-height: 13px;
+        }
+
+        &__icons {
+            width: 305px;
+        }
+
+        &__icon {
+            font-size: 12px;
+        }
+
+        &__link {
+            font-size: 14px;
+        }
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .advantage {
+        &__wrapper{
+            margin-top: 17px;
+        }
+        &__icons {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__icon {
+            &_header{
+                margin-bottom: 6px;
+            }
+            img {
+                margin-bottom: 11px;
+                margin-top: 18px;
+            }
+        }
+    }
+}
