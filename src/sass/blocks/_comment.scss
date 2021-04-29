@@ -1,0 +1,48 @@
+.comment {
+    padding-bottom: 71px;
+
+    &__wrapper {
+        display: flex;
+        padding-top: 100px;
+
+        &_first {
+            padding-top: 70px;
+        }
+
+    }
+
+    &__img {
+        height: 169px;
+        width: 169px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &__feedback {
+        margin-left: 61px;
+    }
+
+    &__title {
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        display: block;
+        margin-top: 10px;
+        color: #646464;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    &__text {
+        display: block;
+        margin-top: 19px;
+        color: #0d0d0d;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
