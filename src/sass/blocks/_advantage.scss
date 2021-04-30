@@ -22,6 +22,11 @@
         font-size: 14px;
         font-weight: 300;
         width: 229px;
+        &_animated{
+            &:hover{
+                animation: heartbeat 1.5s ease infinite;
+            }
+        }
 
         img {
             display: block;

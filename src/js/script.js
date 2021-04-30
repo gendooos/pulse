@@ -49,6 +49,7 @@ $(document).ready(function () {
             $('.overlay,#order').fadeIn();
         })
     });
+
     function validateForms(form) {
         $(form).validate({
             rules: {
@@ -82,13 +83,13 @@ $(document).ready(function () {
 
     $('input[name=phone]').mask("+7 (999) 999-99-99");
 
-    $('form').submit(function(e){
+    $('form').submit(function (e) {
         e.preventDefault();
         $.ajax({
             type: "POST",
             url: "mailer/smart.php",
             data: $(this).serialize()
-        }).done(function(){
+        }).done(function () {
             $(this).find("input").val("");
             $('#consultation, #order').fadeOut();
             $('.overlay, #thanks').fadeIn('slow');
@@ -98,4 +99,21 @@ $(document).ready(function () {
         return false;
 
     });
+    // scroll pageup
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1400) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href^='#']").click(function () {
+        const _href = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(_href).offset().top + "px"
+        });
+        return false;
+    });
+    new WOW().init();
 });
