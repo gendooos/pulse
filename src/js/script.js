@@ -1,21 +1,19 @@
-const slider = tns({
-    container: '.carusel__inner',
-    items: 1,
-    slideBy: 'page',
-    autoplay: false,
-    nav: false,
-    controls: false,
-});
-
-document.querySelector('.prev').addEventListener('click', function () {
-    slider.goTo('prev');
-});
-
-document.querySelector('.next').addEventListener('click', function () {
-    slider.goTo('next');
-});
-
 $(document).ready(function () {
+    $('.carusel__inner').slick({
+        speed: 1200,
+        adaptiveHeight: false,
+        prevArrow: '<button type="button" class="prev"><img src="icons/left.svg"></button>',
+        nextArrow: '<button type="button" class="next"><img src="icons/right.svg"></button>',
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    dots: true,
+                    arrows: false
+                }
+            }
+        ]
+    });
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
         $(this)
             .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
