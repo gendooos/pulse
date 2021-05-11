@@ -34,22 +34,33 @@
         padding: 95px 0 87px 0;
         min-height: 660px;
     }
+    .carusel__inner{
+        width: 95%;
+        img{
+            width: 100%;
+        }
+    }
     .slick-dots {
+        padding: 0px;
         list-style-type: none;
         display: flex;
         margin: 0 auto;
         justify-content: space-between;
-        width: 15%;
+        width: 8%;
         button {
             font-size: 0;
             width: 10px;
             height: 10px;
             margin: 0 auto;
+            border: none;
+            background-color: rgb(148, 144, 144);
+            border-radius: 100%;
         }
     }
     .slick-active {
         button {
             background-color: $main-color;
+            border: none;
         }
     }
 }
@@ -152,5 +163,36 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+    }
+    .slick-dots{
+        width: 10%;
+    }
+    .catalog{
+        &__tab{
+            font-size: 13px;
+        }
+    }
+    .comment{
+        &__img{
+            height: 125px;
+            width: 125px;
+        }
+        &__feedback{
+            margin-left: 25px;
+        }
+    }
+    .footer{
+        &__info{
+            width: 400px;
+            height: 215px;
+        }
+        &__addr{
+            font-size: 16px;
+            line-height: 0px;
+        }
+        &__phone{
+                font-size: 16px;
+                line-height: 0px;
+        }
     }
 }
